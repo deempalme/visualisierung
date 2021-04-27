@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Console</class>
+ <widget class="QMainWindow" name="Console">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1350</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Visualization</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources/images.qrc">
+    <normaloff>:/images/i_pem</normaloff>:/images/i_pem</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="Scene" name="scenary" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="f_host">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="f_views">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>120</y>
+            <width>130</width>
+            <height>378</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <widget class="QPushButton" name="b_op">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>100</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+     background:url(&quot;:/images/b_menu&quot;) left top no-repeat;
+ }
+QPushButton:pressed {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu&quot;) right top no-repeat;  
+ }
+QPushButton:click {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu&quot;) right top no-repeat;  
+ }
+QPushButton:hover:!pressed {
+    background:url(&quot;:/images/b_menu&quot;) center top no-repeat;
+ }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="shortcut">
+            <string>O</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="b_tv">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>110</y>
+             <width>100</width>
+             <height>52</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+     background:url(&quot;:/images/b_menu&quot;) left center no-repeat;
+ }
+QPushButton:pressed {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu&quot;) right center no-repeat;  
+ }
+QPushButton:click {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu&quot;) right center no-repeat;  
+ }
+QPushButton:hover:!pressed {
+    background:url(&quot;:/images/b_menu&quot;) center center no-repeat;
+ }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="shortcut">
+            <string>T</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="b_sv">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>55</y>
+             <width>100</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+     background:url(&quot;:/images/b_menu&quot;) left bottom no-repeat;
+ }
+QPushButton:pressed {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu&quot;) right bottom no-repeat;  
+ }
+QPushButton:click {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu&quot;) right bottom no-repeat;  
+ }
+QPushButton:hover:!pressed {
+    background:url(&quot;:/images/b_menu&quot;) center bottom no-repeat;
+ }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="shortcut">
+            <string>S</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="b_svw">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>165</y>
+             <width>100</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+     background:url(&quot;:/images/b_menu2&quot;) left bottom no-repeat;
+ }
+QPushButton:pressed {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu2&quot;) right bottom no-repeat;  
+ }
+QPushButton:click {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu2&quot;) right bottom no-repeat;  
+ }
+QPushButton:hover:!pressed {
+    background:url(&quot;:/images/b_menu2&quot;) center bottom no-repeat;
+ }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="shortcut">
+            <string>K</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="b_fvw">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>220</y>
+             <width>100</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+     background:url(&quot;:/images/b_menu3&quot;) left bottom no-repeat;
+ }
+QPushButton:pressed {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu3&quot;) right bottom no-repeat;  
+ }
+QPushButton:click {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu3&quot;) right bottom no-repeat;  
+ }
+QPushButton:hover:!pressed {
+    background:url(&quot;:/images/b_menu3&quot;) center bottom no-repeat;
+ }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="shortcut">
+            <string>F</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="b_hop">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>170</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+     background:url(:/images/b_menu4) left top no-repeat;
+ }
+QPushButton:pressed {
+     background:rgba(0,0,0,0) url(:/images/b_menu4) right top no-repeat;  
+ }
+QPushButton:click {
+     background:rgba(0,0,0,0) url(:/images/b_menu4) right top no-repeat;  
+ }
+QPushButton:hover:!pressed {
+    background:url(:/images/b_menu4) center top no-repeat;
+ }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="shortcut">
+            <string>H</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="b_zoomout">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>330</y>
+             <width>100</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+     background:url(&quot;:/images/b_menu5&quot;) left bottom no-repeat;
+ }
+QPushButton:pressed {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu5&quot;) right bottom no-repeat;  
+ }
+QPushButton:click {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu5&quot;) right bottom no-repeat;  
+ }
+QPushButton:hover:!pressed {
+    background:url(&quot;:/images/b_menu5&quot;) center bottom no-repeat;
+ }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="shortcut">
+            <string>-</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="b_zoomin">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>275</y>
+             <width>100</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+     background:url(&quot;:/images/b_menu5&quot;) left top no-repeat;
+ }
+QPushButton:pressed {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu5&quot;) right top no-repeat;  
+ }
+QPushButton:click {
+     background:rgba(0,0,0,0) url(&quot;:/images/b_menu5&quot;) right top no-repeat;  
+ }
+QPushButton:hover:!pressed {
+    background:url(&quot;:/images/b_menu5&quot;) center top no-repeat;
+ }</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="shortcut">
+            <string>+</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QScrollArea" name="f_options">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>0</y>
+            <width>1210</width>
+            <height>471</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QScrollArea{ background:rgba(0,0,0,0.6); }
+QScrollBar:vertical{
+border:0;
+background:rgba(255,255,255,0.2);
+width: 13px;
+margin: 15px 0 15px 0;
+border-radius:6px;
+}
+QScrollBar::handle:vertical{
+background:rgba(255,255,255,0.5);
+border:0;
+border-radius:6px;
+min-height:25px;
+}
+QScrollBar::add-line:vertical{
+border:0;
+background:none;
+height: 13px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical{
+border:0;
+background:none;
+height:13px;
+subcontrol-position: top;
+subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+background: none;
+}
+QScrollBar::up-arrow:vertical{
+image: url(:/images/i_up);
+}
+QScrollBar::down-arrow:vertical{
+image: url(:/images/i_down);
+};</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="f_options_contents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1210</width>
+             <height>500</height>
+            </rect>
+           </property>
+           <widget class="QFrame" name="cen_opt">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>30</y>
+              <width>1210</width>
+              <height>400</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background:#000 url(:/images/on_off) right top no-repeat;
+border-radius:4px;
+color:#fff;
+padding:0 0 0 10px;
+text-align:left;
+ }
+QPushButton:pressed {
+ background:#fff url(:/images/on_off) right top no-repeat;  
+ color:#000;
+}
+QPushButton:click {
+ background:#fff url(:/images/on_off) right top no-repeat;  
+color:#000;
+ }
+QPushButton:hover:!pressed {
+ background:#8ec1e7 url(:/images/on_off) right top no-repeat; 
+color:#000;
+ }
+QLabel{
+color:#CCC;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <widget class="Line" name="v_line_options">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>0</y>
+               <width>2</width>
+               <height>400</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:#000;
+border:1px solid #555;
+border-right:0px;
+border-top:0px;
+border-bottom:0px;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_laser">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>250</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>LASER CLOUD DATA:</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_title">
+             <property name="geometry">
+              <rect>
+               <x>25</x>
+               <y>20</y>
+               <width>211</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:#fff;</string>
+             </property>
+             <property name="text">
+              <string>OPTIONS</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_movables">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>30</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>MOVABLE OBJECTS:</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_movables">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>55</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW &amp;MOVABLE OBJECTS</string>
+             </property>
+             <property name="shortcut">
+              <string>M</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="Line" name="h_line_options">
+             <property name="geometry">
+              <rect>
+               <x>271</x>
+               <y>135</y>
+               <width>240</width>
+               <height>2</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:#000;
+border:1px solid #555;
+border-right:0px;
+border-left:0px;
+border-bottom:0px;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_maps">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>145</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>TERRAIN:</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_streets">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>170</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW ST&amp;REETS</string>
+             </property>
+             <property name="shortcut">
+              <string>R</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_signals">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>205</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW SIG&amp;NALS</string>
+             </property>
+             <property name="shortcut">
+              <string>N</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_lsc">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>275</y>
+               <width>200</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW LASER CLO&amp;UD</string>
+             </property>
+             <property name="shortcut">
+              <string>U</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_vehicle">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>55</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW &amp;VEHICLE</string>
+             </property>
+             <property name="shortcut">
+              <string>V</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_ls_color">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>310</y>
+               <width>200</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>COLORI&amp;ZE LASER POINTS</string>
+             </property>
+             <property name="shortcut">
+              <string>Z</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_trajectory">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>240</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW TRA&amp;JECTORY</string>
+             </property>
+             <property name="shortcut">
+              <string>J</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_ground">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>275</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW &amp;GROUND</string>
+             </property>
+             <property name="shortcut">
+              <string>G</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="Line" name="h_line_options_2">
+             <property name="geometry">
+              <rect>
+               <x>271</x>
+               <y>325</y>
+               <width>240</width>
+               <height>2</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:#000;
+border:1px solid #555;
+border-right:0px;
+border-left:0px;
+border-bottom:0px;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_skybox">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>340</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>SKYBOX:</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_skybox">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>365</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW SKYBO&amp;X</string>
+             </property>
+             <property name="shortcut">
+              <string>X</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_vehicle">
+             <property name="geometry">
+              <rect>
+               <x>530</x>
+               <y>30</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>VEHICLE:</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_chassis">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>90</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW CHASS&amp;IS</string>
+             </property>
+             <property name="shortcut">
+              <string>I</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_rebound">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>125</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>VEHICLE REBOUN&amp;DING</string>
+             </property>
+             <property name="shortcut">
+              <string>D</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="Line" name="v_line_options_2">
+             <property name="geometry">
+              <rect>
+               <x>511</x>
+               <y>0</y>
+               <width>2</width>
+               <height>400</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:#000;
+border:1px solid #555;
+border-right:0px;
+border-top:0px;
+border-bottom:0px;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_texture">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>230</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>AXES SO&amp;LID TEXTURE</string>
+             </property>
+             <property name="shortcut">
+              <string>L</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_rotation">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>195</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>AX&amp;ES ROTATION</string>
+             </property>
+             <property name="shortcut">
+              <string>E</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_axes">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>160</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW &amp;AXES</string>
+             </property>
+             <property name="shortcut">
+              <string>A</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_box">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>265</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW &amp;BOX</string>
+             </property>
+             <property name="shortcut">
+              <string>B</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="Line" name="h_line_options_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>230</y>
+               <width>260</width>
+               <height>2</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:#000;
+border:1px solid #555;
+border-right:0px;
+border-left:0px;
+border-bottom:0px;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_controls">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>87</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>CONTROLS:</string>
+             </property>
+            </widget>
+            <widget class="Line" name="v_line_options_3">
+             <property name="geometry">
+              <rect>
+               <x>750</x>
+               <y>0</y>
+               <width>2</width>
+               <height>400</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:#000;
+border:1px solid #555;
+border-right:0px;
+border-top:0px;
+border-bottom:0px;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_frame">
+             <property name="geometry">
+              <rect>
+               <x>770</x>
+               <y>30</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>FIXED FRAME:</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_frame">
+             <property name="geometry">
+              <rect>
+               <x>780</x>
+               <y>55</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHO&amp;W COORDINATES</string>
+             </property>
+             <property name="shortcut">
+              <string>W</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="Line" name="h_line_options_4">
+             <property name="geometry">
+              <rect>
+               <x>751</x>
+               <y>175</y>
+               <width>240</width>
+               <height>2</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:#000;
+border:1px solid #555;
+border-right:0px;
+border-left:0px;
+border-bottom:0px;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_install">
+             <property name="geometry">
+              <rect>
+               <x>770</x>
+               <y>185</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>MAPS:</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_install">
+             <property name="geometry">
+              <rect>
+               <x>780</x>
+               <y>210</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>INSTALL OSM FILES</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_installmaps">
+             <property name="geometry">
+              <rect>
+               <x>790</x>
+               <y>250</y>
+               <width>180</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:#78d7e1;</string>
+             </property>
+             <property name="text">
+              <string>OSM files found: 4</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_installmaps_2">
+             <property name="geometry">
+              <rect>
+               <x>810</x>
+               <y>265</y>
+               <width>120</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:#FF4040;
+background:url(:/images/i_install) left center no-repeat;
+padding-left:28px;</string>
+             </property>
+             <property name="text">
+              <string>INSTALLING...</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_percentage">
+             <property name="geometry">
+              <rect>
+               <x>820</x>
+               <y>290</y>
+               <width>100</width>
+               <height>100</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>100%</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::PlainText</enum>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_errors">
+             <property name="geometry">
+              <rect>
+               <x>780</x>
+               <y>290</y>
+               <width>170</width>
+               <height>100</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:#FF4040;</string>
+             </property>
+             <property name="text">
+              <string>Errors:</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="bck_percentage">
+             <property name="geometry">
+              <rect>
+               <x>820</x>
+               <y>290</y>
+               <width>100</width>
+               <height>100</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_cameras">
+             <property name="geometry">
+              <rect>
+               <x>530</x>
+               <y>310</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>CAMERAS:</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_cameras">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>335</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW &amp;CAMERAS</string>
+             </property>
+             <property name="shortcut">
+              <string>C</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_gui">
+             <property name="geometry">
+              <rect>
+               <x>780</x>
+               <y>125</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW GRA&amp;PHIC ELEMENTS</string>
+             </property>
+             <property name="shortcut">
+              <string>P</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_gui">
+             <property name="geometry">
+              <rect>
+               <x>770</x>
+               <y>100</y>
+               <width>150</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>SHOW GUI ELEMENTS:</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="bck_icon">
+             <property name="geometry">
+              <rect>
+               <x>810</x>
+               <y>265</y>
+               <width>24</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="Line" name="v_line_options_4">
+             <property name="geometry">
+              <rect>
+               <x>990</x>
+               <y>0</y>
+               <width>2</width>
+               <height>400</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:#000;
+border:1px solid #555;
+border-right:0px;
+border-top:0px;
+border-bottom:0px;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lb_laser_2">
+             <property name="geometry">
+              <rect>
+               <x>1010</x>
+               <y>30</y>
+               <width>121</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>EXTRA BUTTONS:</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="b_tags">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>90</y>
+               <width>180</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>SHOW MAR&amp;QUES</string>
+             </property>
+             <property name="shortcut">
+              <string>Q</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <zorder>bck_percentage</zorder>
+            <zorder>v_line_options</zorder>
+            <zorder>lb_laser</zorder>
+            <zorder>lb_title</zorder>
+            <zorder>lb_movables</zorder>
+            <zorder>b_movables</zorder>
+            <zorder>h_line_options</zorder>
+            <zorder>lb_maps</zorder>
+            <zorder>b_streets</zorder>
+            <zorder>b_signals</zorder>
+            <zorder>b_lsc</zorder>
+            <zorder>b_vehicle</zorder>
+            <zorder>b_ls_color</zorder>
+            <zorder>b_trajectory</zorder>
+            <zorder>b_ground</zorder>
+            <zorder>h_line_options_2</zorder>
+            <zorder>lb_skybox</zorder>
+            <zorder>b_skybox</zorder>
+            <zorder>lb_vehicle</zorder>
+            <zorder>b_chassis</zorder>
+            <zorder>b_rebound</zorder>
+            <zorder>v_line_options_2</zorder>
+            <zorder>b_texture</zorder>
+            <zorder>b_rotation</zorder>
+            <zorder>b_axes</zorder>
+            <zorder>b_box</zorder>
+            <zorder>h_line_options_3</zorder>
+            <zorder>lb_controls</zorder>
+            <zorder>v_line_options_3</zorder>
+            <zorder>lb_frame</zorder>
+            <zorder>b_frame</zorder>
+            <zorder>h_line_options_4</zorder>
+            <zorder>lb_install</zorder>
+            <zorder>b_install</zorder>
+            <zorder>lb_installmaps</zorder>
+            <zorder>lb_installmaps_2</zorder>
+            <zorder>lb_percentage</zorder>
+            <zorder>lb_errors</zorder>
+            <zorder>lb_cameras</zorder>
+            <zorder>b_cameras</zorder>
+            <zorder>b_gui</zorder>
+            <zorder>lb_gui</zorder>
+            <zorder>bck_icon</zorder>
+            <zorder>v_line_options_4</zorder>
+            <zorder>lb_laser_2</zorder>
+            <zorder>b_tags</zorder>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="f_labels">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>200</width>
+            <height>150</height>
+           </rect>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth">
+           <number>0</number>
+          </property>
+         </widget>
+         <zorder>f_labels</zorder>
+         <zorder>f_options</zorder>
+         <zorder>f_views</zorder>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Scene</class>
+   <extends>QWidget</extends>
+   <header>headers/scene.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resources/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

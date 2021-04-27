@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/shaders">
+        <file alias="skyboxVert">../shaders/skybox.vert</file>
+        <file alias="skyboxFrag">../shaders/skybox.frag</file>
+        <file alias="laserVert">../shaders/laser.vert</file>
+        <file alias="laserFrag">../shaders/laser.frag</file>
+        <file alias="vehicleVert">../shaders/vehicle.vert</file>
+        <file alias="vehicleFrag">../shaders/vehicle.frag</file>
+        <file alias="groundFrag">../shaders/ground.frag</file>
+        <file alias="groundVert">../shaders/ground.vert</file>
+        <file alias="streetFrag">../shaders/streets.frag</file>
+        <file alias="streetVert">../shaders/streets.vert</file>
+        <file alias="objectsVert">../shaders/objects.vert</file>
+        <file alias="objectsFrag">../shaders/objects.frag</file>
+        <file alias="complexFrag">../shaders/complex.frag</file>
+        <file alias="complexVert">../shaders/complex.vert</file>
+        <file alias="trajectoryVert">../shaders/trajectory.vert</file>
+        <file alias="trajectoryFrag">../shaders/trajectory.frag</file>
+        <file alias="blinnPhongVert">../shaders/blinnphong.vert</file>
+        <file alias="blinnPhongFrag">../shaders/blinnphong.frag</file>
+        <file alias="normalsVert">../shaders/normals.vert</file>
+        <file alias="normalsFrag">../shaders/normals.frag</file>
+    </qresource>
+</RCC>
